@@ -196,7 +196,7 @@ body {
 }
 
 .img6 {
-    background-image: url("/images/icon-supervisor.svg");
+    background-image: url("images/icon-supervisor.svg");
     background-repeat: no-repeat;
     position: absolute;
     width: 64px;
