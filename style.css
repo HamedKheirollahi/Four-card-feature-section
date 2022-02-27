@@ -1,0 +1,241 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FAFAFA;
+}
+
+.grid_container {
+
+    display: grid;
+    grid-template-areas:
+        'group2 group2 group2'
+        'group6 group3 group5'
+        'group6 group4 group5'
+    ;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 30px;
+
+}
+
+.group2 {
+    grid-area: group2;
+    margin-top: 80px;
+    margin-bottom: 34px;
+    width: 540px;
+    height: 168px;
+    justify-self: center;
+}
+
+.p1 {
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 275;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.25px;
+    text-align: center;
+    color: #4D4F62;
+}
+
+.p2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #4D4F62;
+}
+
+.p3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 13px;
+    text-align: center;
+    letter-spacing: 0.104167px;
+    color: #4D4F62;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.group3,
+.group4,
+.group5,
+.group6 {
+    position: relative;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 8px;
+    width: 350px;
+    height: 250px;
+    background: #FFFFFF;
+}
+
+.group3Rectangle,
+.group4Rectangle,
+.group5Rectangle,
+.group6Rectangle {
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 8px 8px 0px 0px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 98.4%;
+    position: absolute;
+}
+
+
+.group3 {
+    grid-area: group3;
+}
+
+.group3Rectangle {
+    background: #EA5454;
+}
+
+.group4 {
+    grid-area: group4;
+    margin-bottom: 50px;
+}
+
+.group4Rectangle {
+    background: #FCAE4A;
+}
+
+.group5 {
+    grid-area: group5;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+.group5Rectangle {
+    background: #FCAE4A;
+}
+
+.group6 {
+    grid-area: group6;
+    align-self: center;
+    margin-bottom: 50px;
+
+}
+
+.group6Rectangle {
+    background: #44D3D2;
+}
+
+.p4 {
+    position: absolute;
+    height: 30px;
+    left: 9.14%;
+    /* right: 70.86%; */
+    right: 52%;
+    top: calc(50% - 30px/2 - 78px);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4D4F62;
+}
+
+.p5 {
+    position: absolute;
+    height: 46px;
+    left: 9.14%;
+    right: 9.14%;
+    top: calc(50% - 46px/2 - 34px);
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.0902778px;
+    color: #4D4F62;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.img3 {
+    background-image: url("images/icon-team-builder.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 254px;
+    top: 154px;
+}
+
+.img4 {
+    background-image: url("images/icon-karma.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 254px;
+    top: 154px;
+}
+
+.img5 {
+    background-image: url("images/icon-calculator.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 254px;
+    top: 154px;
+}
+
+.img6 {
+    background-image: url("/images/icon-supervisor.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 254px;
+    top: 154px;
+}
+
+
+
+
+@media only screen and (max-width: 375px) {
+    
+
+    .grid_container {
+
+
+        grid-template-areas:
+            'group2 '
+            'group6 '
+            'group3 '
+            'group4'
+            'group5'
+        ;
+        justify-content: center;
+        align-content: center;
+        grid-gap: 25px;
+
+    }
+
+    .group2 {
+        width: 311px;
+        height: 161px;
+    }
+    .p1,.p2{
+        font-size: 24px;
+    }
+    .group4 , .group6{
+        margin-bottom: 0px;
+    }
+
+}
